@@ -34,7 +34,7 @@ console.log('l\'artiste' + firstname );
 console.log('l\'artiste + ${firstname} vous salut');
 let identity = "Bonjour" .concat(firstname," ", lastname);
 console.log(identity);
-//Boite de dialogueal
+//Boite de dialogue
 alert(firstname);
 //Confirmer le choix
 confirm("Voulez-vous vraiment choisir cette option");
