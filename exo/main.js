@@ -11,10 +11,12 @@ for(nombre of nombres){
 
 let prenoms = ['Ali', 'Nour', 'Jean', 'Carole', 'Ibrahim', 'Alma'];
 
-for(prenom of prenoms){
-    console.log(prenoms.slice(2,6));
+for (let i = 2; i < prenoms.length; i++) {
+  console.log(prenoms[i]);
 }
 
 for(prenom of prenoms){
     console.log("Bonjour " + prenom);
 }
+
+

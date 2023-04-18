@@ -99,7 +99,7 @@ console.log("ma boucle n°" + i);
 
 // les boucles imbriquées
 
-let x = 0;
+let i = 0;
 
 while (x < 3){
     console.log("ma boucle n°" + x);
@@ -149,6 +149,3 @@ let mytab2 = ["France", "Paris", "Allemagne", "Espagne"];
 //console.log(mytab2.join("/"));
 
 //Parcourir un tableau for ...of
-for(valeur of mytab2){
-    console.log();
-}
