@@ -1,3 +1,4 @@
+
 // Déclaration d'une variable
 //let firstname;
 //Assination de valeur
@@ -58,3 +59,96 @@ let num2=2;
 document.write(num= num - 2)
 document.write(num -=2);
 document.write(num--);
+//les ternaires.
+let prix = 4
+prix >4 ?alert("cher") :alert("pas cher")
+//switch case
+let mois = 2;
+switch(mois){
+    case 1: alert("janvier");
+        break;
+    case 2 :
+        alert("février");
+        break;
+    default:
+        alert("mois inconnu");    
+}
+// les boucles
+//boucle for est utilisée lorsqu'on connait le nombre de tour
+
+for( i =1; i <=10 ; i++ ){
+  console.log(" ma boucle n°" + 1);
+}
+
+//la boucle while est utilisé lorsqu'on ne sait pas le nombre de tour
+let x = 1;
+
+while( x< 3){
+
+x++;
+console.log("ma boucle n°"+ x);
+}
+
+/*let i = 1;
+
+do{
+i++;
+console.log("ma boucle n°" + i);
+} while(i <3)
+*/
+
+// les boucles imbriquées
+
+let x = 0;
+
+while (x < 3){
+    console.log("ma boucle n°" + x);
+    x++;
+    for(i = 0; i < 3; i++){
+        console.log("ma boucle FOR")
+    }
+    // Les array
+
+/*let mytab = ['livre', 20, ['autocollants', 100]];
+console.log(mytab);
+//Mesurer la longueur du tableau
+console.log(mytab.length);
+
+//Pour accéder à 1 valeur du tableau
+console.log(mytab[1]);
+//Pour accéder à la dernière valeur du tableau
+console.log(mytab[mytab.length-1]);
+//récupérer un élément qui est à l'intérieur
+//d'un sous tableau
+console.log(mytab[2][1]);
+//ajouter un élément à la fin de votre tableau
+console.log(mytab.push("Alain"));
+//supprumer le dernier élément du tableau
+console.log(mytab.pop());
+//supprimer un élément au début du tableau
+console.log(mytab.unshift("Alain"));
+//supprimer un élément au début du tableau
+console.log(mytab.shift());
+//Retrouver l'index d'un élément
+console.log(mytab.indexOf("livre"));
+
+//permet d'extraire une
+let mytab2 = [1,2,3,4,5,6];
+console.log(mytab2.slice(2,4));
+*/
+//console.log(mytab2.slice(1, -1));
+
+//découpe le tableau à partir de la fin
+//console.log(mytab2.slice(-3));
+
+//selection de la 2ème valeur jusqu'a l'ant dernière
+//console.log(mytab2.slice(1, -1));
+
+let mytab2 = ["France", "Paris", "Allemagne", "Espagne"];
+// pour convertir un tableau en string
+//console.log(mytab2.join("/"));
+
+//Parcourir un tableau for ...of
+for(valeur of mytab2){
+    console.log();
+}
