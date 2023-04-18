@@ -123,9 +123,9 @@ console.log(mytab[mytab.length-1]);
 console.log(mytab[2][1]);
 //ajouter un élément à la fin de votre tableau
 console.log(mytab.push("Alain"));
-//supprumer le dernier élément du tableau
+//supprimer le dernier élément du tableau
 console.log(mytab.pop());
-//supprimer un élément au début du tableau
+//ajouter un élément au début du tableau
 console.log(mytab.unshift("Alain"));
 //supprimer un élément au début du tableau
 console.log(mytab.shift());
