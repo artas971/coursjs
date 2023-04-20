@@ -1,4 +1,4 @@
-
+/*
 // Déclaration d'une variable
 //let firstname;
 //Assination de valeur
@@ -98,7 +98,7 @@ console.log("ma boucle n°" + i);
 */
 
 // les boucles imbriquées
-
+/*
 let i = 0;
 
 while (x < 3){
@@ -135,7 +135,7 @@ console.log(mytab.indexOf("livre"));
 //permet d'extraire une
 let mytab2 = [1,2,3,4,5,6];
 console.log(mytab2.slice(2,4));
-*/
+
 //console.log(mytab2.slice(1, -1));
 
 //découpe le tableau à partir de la fin
@@ -149,3 +149,40 @@ let mytab2 = ["France", "Paris", "Allemagne", "Espagne"];
 //console.log(mytab2.join("/"));
 
 //Parcourir un tableau for ...of
+*/
+//La méthode map()est utilisée pour transformer chaque élément d'un tableau en appliquant 
+//une fonction de rappel sur chacun de ces éléments.
+//La syntaxe de base est la suivante:
+//array.map(function(currentValue, index, arr), thisValue)
+/*array: le tableau à parcourir
+function(currentValue, index, arr): la fonction de rappel à exécuter sur chaque élément du tableau
+currentValue: la valeur de l'élément actuel du tableau
+index: l'index de l'élément actuel du tableau
+arr: le tableau sur lequel la méthode map() a été appelée
+thisValue (optionnel): la valeur à utiliser comme this lors de l'exécution de la fonction de rappel./
+La méthode map() renvoie un nouveau tableau contenant les résultats de l'appel de la fonction de rappel 
+sur chaque élément du tableau d'origine. Le nouveau tableau aura la même longueur que le tableau d'origine.*/
+/*let numbers = [1, 2, 3, 4, 5];
+let doubledNumbers = numbers.map(function(num) {
+  return num * 2;
+}); 
+console.log(doubledNumbers);  
+/*Le Dom 
+Selection par éléments
+Selection par ID*/
+let nom="anamontana"
+let prenom="gilles"
+console.log(nom.replace('tana','tany'))
+console.log(nom.concat(' ',prenom))
+let salutation = ('                         salut        ')
+console.log(salutation.trim())
+console.log(prenom.charAt(2));
+//Separateur(split) mettre sous form d'array
+let greetings = 'Hello My Guys';
+console.log(greetings.split(' '));
+let tmp = greetings.split(' ');
+console.log(tmp);
+//regroupement le tableau en chaine de carractere(convert array to string)
+let join= tmp.join('-')
+console.log(join);
+

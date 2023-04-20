@@ -1,22 +1,23 @@
-let nombres = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048];
+let monTitre = document.getElementById("monTitre"); //selection de mon h1 grace au dom
 
-console.log(nombres.pop()); 
-console.log(nombres.shift()); 
+monTitre.innerHTML = "bonjour à tous"; //modification de mon titre
 
-console.log(nombres.length); 
+let paragraphes = document.querySelectorAll('p'); //selectionner mes balise p
+console.log(paragraphes) //verification que mes balise p sont bien ma nouvelle variable sous forme de tableau
+for (let i = 0; i < paragraphes.length; i++) {
+  paragraphes[i].style.color = 'brown';
+}// changement de la couleur de saisie en marron 
 
-for(nombre of nombres){
-    console.log(nombre);
-}
+let para3 = document.getElementById('3'); //selectionné mon p3 par son id
+para3.style.fontStyle = 'italic'; // lui mettre un fontstyle italic
 
-let prenoms = ['Ali', 'Nour', 'Jean', 'Carole', 'Ibrahim', 'Alma'];
 
-for (let i = 2; i < prenoms.length; i++) {
-  console.log(prenoms[i]);
-}
-
-for(prenom of prenoms){
-    console.log("Bonjour " + prenom);
-}
-
+let p1 = document.getElementById("1"); // sélectionne  l'id "1"
+p1.classList.add("paraone"); // ajoute la classe "maClasse" à l'élément
+console.log(p1)//verificationde la presence de la class paraone
+let p4 = document.getElementById("4"); //  l'id "4"
+p4.classList.remove("para4"); // supprime la classe "para4" de l'élément
+console.log(p4)
+let image = document.getElementById("img"); //selection de mon image par id 
+image.src = "arbre.JPG";
 
