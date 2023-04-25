@@ -1,23 +1,37 @@
-let monTitre = document.getElementById("monTitre"); //selection de mon h1 grace au dom
+function addtext(){
+  let clicbutton = document.getElementById("btn");
+  clicbutton.addEventListener("click", function() {
+   let usertext= prompt("ecrivez votre message");
+   let textValider=document.getElementById("p1");
+   textValider.innerHTML=`${usertext}`
+  });
+}
+let clicbutton = document.querySelectorAll("button")[1];
+console.log(clicbutton)
 
-monTitre.innerHTML = "bonjour à tous"; //modification de mon titre
+addtext();
 
-let paragraphes = document.querySelectorAll('p'); //selectionner mes balise p
-console.log(paragraphes) //verification que mes balise p sont bien ma nouvelle variable sous forme de tableau
-for (let i = 0; i < paragraphes.length; i++) {
-  paragraphes[i].style.color = 'brown';
-}// changement de la couleur de saisie en marron 
+function mode(){ 
+  let selectionbody=document.querySelectorAll("body")
+  let selectionBtnMode=document.querySelectorAll("button")[1];
+  console.log(selectionBtnMode)
+  selectionBtnMode.addEventListener("click",function(){
+    if(selectionBtnMode.id === "darkmodebtn"){
+    document.body.classList.remove("bgwm");
+    document.body.classList.add("bgdm");
+    selectionBtnMode.innerHTML = `mode jour`;
+    document.getElementsByTagName("button")[1].id = "daymodebtn";
+  }else{
+    document.body.classList.remove("bgdm");
+    document.body.classList.add("bgwm");
+    selectionBtnMode.innerHTML = `mode nuit`;
+    document.getElementsByTagName("button")[1].id = "darkmodebtn";
+  }
 
-let para3 = document.getElementById('3'); //selectionné mon p3 par son id
-para3.style.fontStyle = 'italic'; // lui mettre un fontstyle italic
+    
+  })
+  console.log(selectionbody)
+}
+mode()
 
-
-let p1 = document.getElementById("1"); // sélectionne  l'id "1"
-p1.classList.add("paraone"); // ajoute la classe "maClasse" à l'élément
-console.log(p1)//verificationde la presence de la class paraone
-let p4 = document.getElementById("4"); //  l'id "4"
-p4.classList.remove("para4"); // supprime la classe "para4" de l'élément
-console.log(p4)
-let image = document.getElementById("img"); //selection de mon image par id 
-image.src = "arbre.JPG";
 
